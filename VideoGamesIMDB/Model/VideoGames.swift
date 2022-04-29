@@ -8,9 +8,6 @@
 import Foundation
 
 struct VideoGames: Decodable {
-    let count : Int32
-    let next : String
-    let previous : String
     let name : String
     
 }
