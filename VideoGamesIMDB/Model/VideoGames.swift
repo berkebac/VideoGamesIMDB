@@ -8,8 +8,11 @@
 import Foundation
 
 struct VideoGames: Decodable {
-    let name : String
-    
+    let results: [NameModel]?
+}
+
+struct NameModel:Decodable {
+    let name: String?
 }
 
 

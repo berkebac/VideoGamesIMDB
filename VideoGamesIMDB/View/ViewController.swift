@@ -19,7 +19,7 @@ class ViewController: UIViewController , UITableViewDataSource , UITableViewDele
         tableView.dataSource = self
         
         
-        let url = URL(string: "https://api.rawg.io/api/games?key=f39e8f6f841142ee823c395378985e0d&dates=2019-09-01,2019-09-30&platforms=18,1,7")!
+        let url = URL(string: "https://api.rawg.io/api/games?key=f39e8f6f841142ee823c395378985e0d")!
         
         WebService().downloadData(url: url) { (games) in
             if let games = games {

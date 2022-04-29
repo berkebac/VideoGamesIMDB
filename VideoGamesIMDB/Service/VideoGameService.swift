@@ -17,13 +17,10 @@ class WebService {
                 
             }else if let data = data {
                 do {
-                    let videoGameList = try? JSONDecoder().decode([VideoGames].self, from: data)
+                    let videoGameList = try? JSONDecoder().decode((VideoGames.self), from: data)
                     print(videoGameList)
                     
-                    if let videoGameList = videoGameList {
-                        completion(videoGameList)
-                        
-                    }
+                    
                 }
                 
                 
