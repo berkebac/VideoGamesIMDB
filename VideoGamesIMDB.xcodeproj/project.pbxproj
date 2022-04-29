@@ -13,6 +13,10 @@
 		F9758873281B1AA2004BCC03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9758871281B1AA2004BCC03 /* Main.storyboard */; };
 		F9758875281B1AA3004BCC03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9758874281B1AA3004BCC03 /* Assets.xcassets */; };
 		F9758878281B1AA3004BCC03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9758876281B1AA3004BCC03 /* LaunchScreen.storyboard */; };
+		F9758880281B1D78004BCC03 /* VideoGameTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F975887F281B1D78004BCC03 /* VideoGameTableViewCell.swift */; };
+		F9758882281B1F9C004BCC03 /* example.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = F9758881281B1F9C004BCC03 /* example.jpeg */; };
+		F9758887281B2183004BCC03 /* VideoGames.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9758886281B2183004BCC03 /* VideoGames.swift */; };
+		F975888A281B22FE004BCC03 /* VideoGameService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9758889281B22FE004BCC03 /* VideoGameService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		F9758874281B1AA3004BCC03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F9758877281B1AA3004BCC03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F9758879281B1AA3004BCC03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F975887F281B1D78004BCC03 /* VideoGameTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoGameTableViewCell.swift; sourceTree = "<group>"; };
+		F9758881281B1F9C004BCC03 /* example.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = example.jpeg; sourceTree = "<group>"; };
+		F9758886281B2183004BCC03 /* VideoGames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoGames.swift; sourceTree = "<group>"; };
+		F9758889281B22FE004BCC03 /* VideoGameService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoGameService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,43 @@
 		F975886A281B1AA2004BCC03 /* VideoGamesIMDB */ = {
 			isa = PBXGroup;
 			children = (
-				F975886B281B1AA2004BCC03 /* AppDelegate.swift */,
-				F975886D281B1AA2004BCC03 /* SceneDelegate.swift */,
-				F975886F281B1AA2004BCC03 /* ViewController.swift */,
+				F9758885281B216D004BCC03 /* Model */,
+				F9758884281B2150004BCC03 /* Service */,
+				F9758883281B2147004BCC03 /* View */,
 				F9758871281B1AA2004BCC03 /* Main.storyboard */,
 				F9758874281B1AA3004BCC03 /* Assets.xcassets */,
 				F9758876281B1AA3004BCC03 /* LaunchScreen.storyboard */,
+				F9758881281B1F9C004BCC03 /* example.jpeg */,
 				F9758879281B1AA3004BCC03 /* Info.plist */,
 			);
 			path = VideoGamesIMDB;
+			sourceTree = "<group>";
+		};
+		F9758883281B2147004BCC03 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F975886B281B1AA2004BCC03 /* AppDelegate.swift */,
+				F975886D281B1AA2004BCC03 /* SceneDelegate.swift */,
+				F975886F281B1AA2004BCC03 /* ViewController.swift */,
+				F975887F281B1D78004BCC03 /* VideoGameTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F9758884281B2150004BCC03 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				F9758889281B22FE004BCC03 /* VideoGameService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		F9758885281B216D004BCC03 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F9758886281B2183004BCC03 /* VideoGames.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +161,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9758882281B1F9C004BCC03 /* example.jpeg in Resources */,
 				F9758878281B1AA3004BCC03 /* LaunchScreen.storyboard in Resources */,
 				F9758875281B1AA3004BCC03 /* Assets.xcassets in Resources */,
 				F9758873281B1AA2004BCC03 /* Main.storyboard in Resources */,
@@ -141,6 +178,9 @@
 				F9758870281B1AA2004BCC03 /* ViewController.swift in Sources */,
 				F975886C281B1AA2004BCC03 /* AppDelegate.swift in Sources */,
 				F975886E281B1AA2004BCC03 /* SceneDelegate.swift in Sources */,
+				F9758880281B1D78004BCC03 /* VideoGameTableViewCell.swift in Sources */,
+				F9758887281B2183004BCC03 /* VideoGames.swift in Sources */,
+				F975888A281B22FE004BCC03 /* VideoGameService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

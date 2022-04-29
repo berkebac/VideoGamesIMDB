@@ -1,24 +1,97 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="VideoGamesIMDB" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="WDc-qd-CvO">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="VideoGamesCell" rowHeight="114" id="kte-pb-wu9" customClass="VideoGameTableViewCell" customModule="VideoGamesIMDB" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="114"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kte-pb-wu9" id="iay-So-QRa">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="114"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Rating - released" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nzg-g2-3aK">
+                                                    <rect key="frame" x="140" y="46" width="269" height="22"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="47508933.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="9A3-2i-o6E">
+                                                    <rect key="frame" x="20" y="19" width="100" height="94"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="94" id="Pg9-DL-N6u"/>
+                                                        <constraint firstAttribute="width" constant="100" id="xCa-lK-WJ9"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Name Of Game" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DEx-DJ-zmH">
+                                                    <rect key="frame" x="140" y="19" width="269" height="22"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="22" id="UZx-EP-2Vl"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="9A3-2i-o6E" firstAttribute="top" secondItem="DEx-DJ-zmH" secondAttribute="top" id="Dlf-Gb-6yE"/>
+                                                <constraint firstItem="DEx-DJ-zmH" firstAttribute="leading" secondItem="nzg-g2-3aK" secondAttribute="leading" id="Hno-bs-xeT"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="nzg-g2-3aK" secondAttribute="bottom" constant="35" id="JQZ-aS-t70"/>
+                                                <constraint firstItem="9A3-2i-o6E" firstAttribute="leading" secondItem="iay-So-QRa" secondAttribute="leadingMargin" id="MYm-lb-b64"/>
+                                                <constraint firstItem="DEx-DJ-zmH" firstAttribute="trailing" secondItem="nzg-g2-3aK" secondAttribute="trailing" id="R7c-tM-Cjw"/>
+                                                <constraint firstItem="DEx-DJ-zmH" firstAttribute="trailing" secondItem="iay-So-QRa" secondAttribute="trailingMargin" constant="15" id="gcp-lx-7iD"/>
+                                                <constraint firstItem="9A3-2i-o6E" firstAttribute="top" secondItem="iay-So-QRa" secondAttribute="topMargin" constant="8" id="h47-vL-oCd"/>
+                                                <constraint firstItem="nzg-g2-3aK" firstAttribute="top" secondItem="DEx-DJ-zmH" secondAttribute="bottom" constant="5" id="qJC-zZ-u1t"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="ImageView" destination="9A3-2i-o6E" id="onk-ae-Gwd"/>
+                                            <outlet property="gameNameText" destination="DEx-DJ-zmH" id="iad-Mq-aPo"/>
+                                            <outlet property="ratingText" destination="nzg-g2-3aK" id="MFg-ag-ZAZ"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="WDc-qd-CvO" secondAttribute="trailing" id="Amw-Np-Apf"/>
+                            <constraint firstItem="WDc-qd-CvO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="FiC-IK-DvI"/>
+                            <constraint firstItem="WDc-qd-CvO" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="mCT-Nx-qvm"/>
+                            <constraint firstItem="WDc-qd-CvO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="pKc-tJ-pdd"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="WDc-qd-CvO" id="XsQ-Ln-dQy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="28.985507246376812" y="69.642857142857139"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="47508933.jpeg" width="450" height="318"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
