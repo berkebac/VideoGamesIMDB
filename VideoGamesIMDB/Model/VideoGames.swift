@@ -7,13 +7,18 @@
 
 import Foundation
 
-struct VideoGames: Decodable {
-    let results: [NameModel]?
+struct GameList: Decodable {
+    let results: [Game]
 }
 
-struct NameModel:Decodable {
-    let name: String?
+struct Game:Decodable {
+    let id: Int
+    let name: String
+    let released: String
+    let rating: Double
+    let background_image: String?
 }
+
 
 
 /*

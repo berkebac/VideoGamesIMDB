@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F902ADBB281C373600B55819 /* VideoGameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F902ADBA281C373600B55819 /* VideoGameViewModel.swift */; };
 		F975886C281B1AA2004BCC03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F975886B281B1AA2004BCC03 /* AppDelegate.swift */; };
 		F975886E281B1AA2004BCC03 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F975886D281B1AA2004BCC03 /* SceneDelegate.swift */; };
 		F9758870281B1AA2004BCC03 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F975886F281B1AA2004BCC03 /* ViewController.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F902ADBA281C373600B55819 /* VideoGameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoGameViewModel.swift; sourceTree = "<group>"; };
 		F9758868281B1AA2004BCC03 /* VideoGamesIMDB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoGamesIMDB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F975886B281B1AA2004BCC03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F975886D281B1AA2004BCC03 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +47,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F902ADB9281C36DB00B55819 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F902ADBA281C373600B55819 /* VideoGameViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		F975885F281B1AA2004BCC03 = {
 			isa = PBXGroup;
 			children = (
@@ -64,6 +74,7 @@
 		F975886A281B1AA2004BCC03 /* VideoGamesIMDB */ = {
 			isa = PBXGroup;
 			children = (
+				F902ADB9281C36DB00B55819 /* ViewModel */,
 				F9758885281B216D004BCC03 /* Model */,
 				F9758884281B2150004BCC03 /* Service */,
 				F9758883281B2147004BCC03 /* View */,
@@ -178,6 +189,7 @@
 				F9758870281B1AA2004BCC03 /* ViewController.swift in Sources */,
 				F975886C281B1AA2004BCC03 /* AppDelegate.swift in Sources */,
 				F975886E281B1AA2004BCC03 /* SceneDelegate.swift in Sources */,
+				F902ADBB281C373600B55819 /* VideoGameViewModel.swift in Sources */,
 				F9758880281B1D78004BCC03 /* VideoGameTableViewCell.swift in Sources */,
 				F9758887281B2183004BCC03 /* VideoGames.swift in Sources */,
 				F975888A281B22FE004BCC03 /* VideoGameService.swift in Sources */,
